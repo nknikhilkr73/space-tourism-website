@@ -307,7 +307,7 @@
   }
   body {
     height: 100%;
-    background-image: url("/html/destination/images/background-destination-desktop.jpg");
+    background-image: url("../html/destination/images/background-destination-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
