@@ -1,0 +1,352 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Dosis";
+}
+
+@media (max-width: 700px) {
+  body {
+    min-width: 300px;
+    background-image: url("../starter-code/assets/home/background-home-mobile.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+
+    background-size: cover;
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+  nav {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    min-width: 280px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .one {
+    display: flex;
+    width: 100%;
+    margin: 1.6rem auto;
+    justify-content: center;
+    height: 4rem;
+    align-items: center;
+    word-spacing: 0.2rem;
+  }
+  .nav_links {
+    display: flex;
+    width: 180px;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    right: 0;
+    position: absolute;
+    top: 4rem;
+    padding: 1rem 0;
+    background-image: linear-gradient(0deg, rgb(17, 42, 62), rgb(6, 4, 20));
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+    transform: translate(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  a {
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    width: 10rem;
+    height: 2rem;
+  }
+
+  hr {
+    display: none;
+  }
+  .main {
+    color: aliceblue;
+    max-width: 400px;
+    height: 400px;
+    padding-top: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .main h1 {
+    font-size: 5.5rem;
+    margin: 1rem 0;
+    padding: auto 1rem;
+    text-align: center;
+    font-weight: 400;
+  }
+  .main p.child_header {
+    font-size: 1.1rem;
+    word-spacing: 0px;
+    text-align: center;
+    padding: 0 0.3rem;
+
+    font-weight: 300;
+  }
+  .main p.child_para {
+    font-size: 1.1rem;
+
+    padding: 0 0.5rem;
+
+    line-height: 1.4;
+    font-weight: 200;
+  }
+  .explore {
+    background-color: aliceblue;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 100%;
+    margin-top: 4rem;
+  }
+  .explore h1 {
+    max-height: 3rem;
+    margin: auto;
+  }
+  .nav_links li {
+    opacity: 0;
+  }
+}
+@media (min-width: 700.1px) and (max-width: 1000px) {
+  body {
+    height: 100%;
+    background-image: url("../starter-code/assets/home/background-home-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  nav {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    min-width: 200px;
+  }
+  .one {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    word-spacing: 0.2rem;
+  }
+  .nav_links {
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+    padding-right: 2rem;
+    height: 4rem;
+    align-items: center;
+    background-image: linear-gradient(
+      195deg,
+      rgba(10, 62, 105, 0.436),
+      rgb(21, 19, 44)
+    );
+  }
+  a {
+    text-decoration: none;
+    color: aliceblue;
+  }
+  hr {
+    display: none;
+  }
+  .logo {
+    margin-left: 1rem;
+  }
+
+  .border {
+    flex-grow: 1;
+    position: relative;
+    left: 2.5%;
+    opacity: 0.6;
+    border-color: rgb(129, 127, 134);
+  }
+  .burger {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .main {
+    color: aliceblue;
+    min-width: 450px;
+    max-width: 450.01px;
+    height: 400px;
+    padding-top: 2rem;
+    text-align: center;
+    margin: 3rem auto;
+  }
+  .main h1 {
+    font-size: 7rem;
+    margin: 1rem 0;
+  }
+  .main p.child_header {
+    font-size: 1.5rem;
+    word-spacing: 5px;
+  }
+  .main p.child_para {
+    font-size: 1.2rem;
+    word-spacing: 3px;
+    line-height: 1.5;
+  }
+  .explore {
+    background-color: aliceblue;
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    margin-top: 5rem;
+  }
+  .explore h1 {
+    font-size: 3rem;
+    max-height: 4rem;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1000.1px) {
+  body {
+    min-height: 100%;
+    min-width: 1200px;
+    background-image: url("../starter-code/assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  nav {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    min-width: 200px;
+  }
+  .one {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    word-spacing: 0.2rem;
+  }
+  .nav_links {
+    display: flex;
+    justify-content: space-around;
+    width: 50rem;
+    height: 4rem;
+    align-items: center;
+    padding: 0 2.5rem 0 1.5rem;
+    background-image: linear-gradient(
+      195deg,
+      rgba(10, 62, 105, 0.436),
+      rgb(21, 19, 44)
+    );
+  }
+  a {
+    text-decoration: none;
+    color: aliceblue;
+  }
+  hr {
+    border-top: solid 2px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+  .logo {
+    margin-left: 1rem;
+  }
+
+  .border {
+    flex-grow: 1;
+    position: relative;
+    left: 2.5%;
+    opacity: 0.6;
+    border-color: rgb(129, 127, 134);
+  }
+  .burger {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 9rem 4rem 7rem;
+    margin: 3rem;
+    min-width: 400px;
+  }
+
+  .main {
+    color: aliceblue;
+    max-width: 400px;
+    min-height: 400px;
+    padding-top: 2rem;
+  }
+  .main h1 {
+    font-size: 10rem;
+    margin: 1rem 0;
+  }
+  .main p.child_header {
+    font-size: 1.5rem;
+    word-spacing: 5px;
+    text-align: justify;
+  }
+  .main p.child_para {
+    font-size: 1.1rem;
+    word-spacing: 3px;
+    text-align: justify;
+  }
+  .explore {
+    background-color: aliceblue;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 100%;
+  }
+  .explore h1 {
+    max-height: 3rem;
+    margin: auto;
+  }
+}
+.nav_active {
+  transform: translate(0%);
+  filter: drop-shadow(0 0 15rem rgb(0, 213, 255));
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translate(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.hide {
+  display: none;
+}
+.hovering {
+  border-bottom: 2px solid aliceblue;
+}
+.hovering_two {
+  border-bottom: 2px solid aliceblue;
+}
+.active {
+  border-bottom: 2px solid aliceblue;
+}

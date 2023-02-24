@@ -1,0 +1,564 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Dosis";
+  color: aliceblue;
+}
+
+@media (max-width: 700px) {
+  body {
+    min-width: 308px;
+    background-image: url("/html/technology/images/background-technology-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+  }
+  .container {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    position: relative;
+    height: 88.5vh;
+  }
+  nav {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    min-width: 280px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    z-index: 1;
+  }
+  .one {
+    display: flex;
+    width: 100%;
+    margin: 1.6rem auto;
+    justify-content: center;
+    height: 4rem;
+    align-items: center;
+    word-spacing: 0.2rem;
+  }
+  .nav_links {
+    display: flex;
+    width: 180px;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    right: 0;
+    position: absolute;
+    top: 4rem;
+    padding: 1rem 0;
+    background-image: linear-gradient(0deg, rgb(17, 42, 62), rgb(6, 4, 20));
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+    transform: translate(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav_links li {
+    opacity: 0;
+  }
+  a {
+    text-decoration: none;
+    color: aliceblue;
+  }
+  .a {
+    display: block;
+    width: 10rem;
+    height: 2rem;
+  }
+  .border {
+    display: none;
+  }
+
+  .child_header {
+    font-size: 1.3rem;
+    position: absolute;
+    text-align: center;
+    top: -45vh;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.4rem;
+  }
+  .child_para {
+    font-size: 1.1rem;
+    padding: 0 0.3rem;
+    line-height: 1.1;
+    font-weight: 200;
+    text-align: center;
+  }
+  p span {
+    margin-right: 0.5rem;
+    color: darkgrey;
+  }
+  .numbers {
+    width: 90vw;
+    max-height: 100px;
+    min-width: 290px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .numbering {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border: 0.1px solid rgb(255, 255, 255);
+
+    border-radius: 100%;
+    margin: auto;
+  }
+  .numbering p {
+    color: rgb(255, 255, 255);
+    margin: auto;
+  }
+
+  .crew {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    right: -4px;
+  }
+
+  .image_text {
+    margin-top: 3rem;
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+  }
+  .childd {
+    margin-bottom: 1rem;
+    height: 2rem;
+    width: 300px;
+  }
+  .childd h3 {
+    letter-spacing: 0.3rem;
+    font-weight: 200;
+  }
+
+  .mainn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    min-width: 300px;
+  }
+  .main_parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 160px;
+  }
+
+  .name {
+    width: 300px;
+  }
+  .name h1 {
+    font-size: 2.4rem;
+    word-spacing: 0.5rem;
+  }
+  .middle {
+    max-width: 370px;
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 700.1px) and (max-width: 1000px) {
+  body {
+    height: 100%;
+    background-image: url("/html/technology/images/background-technology-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  nav {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    min-width: 200px;
+  }
+  .border {
+    display: none;
+  }
+
+  .one {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    word-spacing: 0.2rem;
+  }
+  .nav_links {
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+    padding-right: 2rem;
+    height: 4rem;
+    align-items: center;
+    background-image: linear-gradient(
+      195deg,
+      rgba(10, 62, 105, 0.436),
+      rgb(21, 19, 44)
+    );
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    padding-top: 2rem;
+    position: relative;
+    height: 1000px;
+  }
+  a {
+    text-decoration: none;
+    color: aliceblue;
+  }
+
+  .logo {
+    margin-left: 1rem;
+  }
+  .burger {
+    display: none;
+  }
+
+  .border {
+    display: none;
+  }
+
+  .child_header {
+    font-size: 1.3rem;
+    position: absolute;
+    text-align: center;
+    left: -10px;
+    top: -73vh;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.4rem;
+  }
+  .child_para {
+    font-size: 1.4rem;
+    padding: 0 1rem;
+    line-height: 1.4;
+    font-weight: 200;
+    text-align: center;
+  }
+  p span {
+    margin-right: 1.3rem;
+    color: darkgrey;
+  }
+
+  .crew {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    right: -4px;
+  }
+
+  .image_text {
+    width: 100%;
+    margin-top: 3rem;
+    height: 450px;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+  }
+  .numbers {
+    width: 350px;
+
+    max-height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .numbering {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    border: 0.1px solid rgb(255, 255, 255);
+    margin: auto;
+  }
+
+  .numbering p {
+    color: rgb(255, 255, 255);
+    margin: auto;
+  }
+  .childd {
+    height: 3.5rem;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+  }
+  .childd h2 {
+    font-size: 1.5rem;
+
+    letter-spacing: 0.3rem;
+    font-weight: 300;
+  }
+
+  .mainn {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    margin-top: 1rem;
+    width: 600px;
+  }
+  .main_parent {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    position: relative;
+    top: 230px;
+  }
+
+  .name {
+    word-spacing: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 450px;
+    margin-bottom: 1rem;
+  }
+  .name h1 {
+    font-size: 4rem;
+  }
+
+  .middle {
+    max-width: 550px;
+    margin: 1rem auto 2rem;
+  }
+}
+
+@media (min-width: 1000.1px) {
+  html {
+    height: 100%;
+    min-width: 1200px;
+  }
+  body {
+    height: 100%;
+    background-image: url("/html/technology/images/background-technology-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  nav {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    min-width: 200px;
+  }
+  .one {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    word-spacing: 0.2rem;
+  }
+  .nav_links {
+    display: flex;
+    justify-content: space-around;
+    width: 50rem;
+    height: 4rem;
+    align-items: center;
+    padding: 0 2.5rem 0 1.5rem;
+    background-image: linear-gradient(
+      195deg,
+      rgba(10, 62, 105, 0.436),
+      rgb(21, 19, 44)
+    );
+  }
+  a {
+    text-decoration: none;
+    color: aliceblue;
+  }
+  hr {
+    border-top: solid 2px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+  .logo {
+    margin-left: 1rem;
+  }
+
+  .border {
+    flex-grow: 1;
+    position: relative;
+    left: 2.5%;
+    opacity: 0.6;
+    border-color: rgb(129, 127, 134);
+  }
+  .burger {
+    display: none;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+
+    bottom: -4rem;
+  }
+
+  .child_header {
+    font-size: 1.3rem;
+    position: absolute;
+    text-align: center;
+    left: 10%;
+    top: 0;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.4rem;
+  }
+  .main_parent {
+    display: flex;
+    height: 500px;
+    position: relative;
+    padding-top: 9rem;
+    left: 0;
+    margin: auto;
+    max-width: 600px;
+  }
+
+  .child_para {
+    font-size: 1.2rem;
+    word-spacing: 3px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  p span {
+    margin-right: 1rem;
+    color: darkgrey;
+  }
+  .crew {
+    width: 450px;
+  }
+
+  .image_text {
+    position: relative;
+    right: 0;
+    width: 450px;
+    min-height: 500px;
+    margin-top: 1rem;
+    text-align: right;
+  }
+  .childd {
+    margin-bottom: 1rem;
+    height: 2rem;
+  }
+  .childd h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    font-weight: 300;
+  }
+
+  .mainn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 455px;
+    height: 300px;
+  }
+  /* .slider_1 {
+    transform: translateX(0);
+  }
+  .slider_2 {
+    transform: translateX(100%);
+  }
+  .slider_3 {
+    transform: translateX(200%);
+  } */
+
+  .numbers {
+    min-width: 150px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .numbering {
+    display: flex;
+    height: 60px;
+    width: 60px;
+
+    border-radius: 100%;
+    border: 0.1px solid white;
+    margin: auto;
+  }
+  .numbering p {
+    color: rgb(255, 255, 255);
+    margin: auto;
+  }
+
+  .name {
+    width: 400px;
+    word-spacing: 0.4rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  .name h1 {
+    font-size: 3.1rem;
+  }
+
+  .middle {
+    max-width: 450px;
+  }
+}
+.nav_active {
+  transform: translate(0%);
+  filter: drop-shadow(0 0 15rem rgb(0, 213, 255));
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translate(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.hide {
+  display: none;
+}
+.hovering {
+  border-bottom: 2px solid aliceblue;
+}
+.hovering_two {
+  border-bottom: 2px solid aliceblue;
+}
+.active {
+  background-color: aliceblue;
+}
+.active p {
+  color: black;
+}
+.activate {
+  background-color: aliceblue;
+}
+.activate p {
+  color: black;
+}
