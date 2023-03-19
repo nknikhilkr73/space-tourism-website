@@ -28,13 +28,10 @@ burger.addEventListener("click", function () {
     }
   });
   if (f === 0) {
-    burger.setAttribute("src", "/starter-code/assets/shared/icon-close.svg");
+    burger.setAttribute("src", "starter-code/assets/shared/icon-close.svg");
     f = 1;
   } else {
-    burger.setAttribute(
-      "src",
-      "/starter-code/assets/shared/icon-hamburger.svg"
-    );
+    burger.setAttribute("src", "starter-code/assets/shared/icon-hamburger.svg");
     f = 0;
   }
 });
